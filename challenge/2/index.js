@@ -1,5 +1,6 @@
 class ArrayUtilities {
   /* Your magic here */
+
   static addZeros = (numbers) => numbers.map((num) => num * 10);
   static moreThanFifty = (addZeros) => addZeros.filter((num) => num > 50);
   static removeFirst = (moreThanFifty) => moreThanFifty.slice(1);
