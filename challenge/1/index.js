@@ -9,6 +9,10 @@ class ObjectUtilities {
     const favFood = obj["favFood"];
     return { name, favFood };
   };
+  //   Answer
+  //   static mergeObjects = (objectA, objectB) => ({ ...objectA, ...objectB });
+  //   static removePassword = ({ name, ...rest }) => rest;
+
   static freezeObj = (obj) => Object.freeze(obj);
   static getOnlyValues = (obj) => Object.values(obj);
   static getOnlyProperties = (obj) => Object.keys(obj);
