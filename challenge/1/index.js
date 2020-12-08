@@ -10,7 +10,7 @@ class ObjectUtilities {
     return { name, favFood };
   };
   /**
-   * Answer:
+   * Solution:
    * static mergeObjects = (objectA, objectB) => ({ ...objectA, ...objectB });
    * static removePassword = ({ name, ...rest }) => rest;
    */
