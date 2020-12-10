@@ -1,20 +1,38 @@
 // https://velog.io/@bigbrothershin/React-Router
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, withRouter } from "react-router-dom";
+import styled from "styled-components";
 
-export default () => (
+const List = styled.ul`
+  margin: 30px 0;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+const SLink = styled(Link)`
+  font-weight: bold;
+  text-decoration: none;
+
+  &:focus {
+    background-color: gold;
+    color: white;
+  }
+`;
+
+export default withRouter(({ location: { pathname } }) => (
   <header>
-    {/* Magic Here */}
-    <ul>
+    <List>
       <li>
-        <Link to="/prices">Prices!</Link>
+        <SLink to="/prices">PRICES</SLink>
       </li>
       <li>
-        <Link to="/exchanges">Exchanges!</Link>
+        <SLink to="/exchanges">EXCHANGES</SLink>
       </li>
       <li>
-        <Link to="/coins">Coins!</Link>
+        <SLink to="/coins">COINS</SLink>
       </li>
-    </ul>
+    </List>
   </header>
-);
+));

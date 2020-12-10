@@ -9,11 +9,11 @@ export default () => (
   <Router>
     {/* Magic Here */}
     <Header />
-    <>
-      <Route path="/prices" component={Prices} />
-      <Route path="/exchanges" component={Exchanges} />
-      <Route path="/coins" component={Coins} />
-      <Redirect from="*" to="/" />
-    </>
+    {/* <> */}
+    <Route path="/prices" component={Prices} />
+    <Route path="/exchanges" component={Exchanges} />
+    <Route path="/coins" component={Coins} />
+    <Redirect from="*" to="/" />
+    {/* </> */}
   </Router>
 );
